@@ -11,17 +11,6 @@ sections:
           validate:
             - required
       -
-        handle: author
-        field:
-          max_items: 1
-          mode: select
-          display: Author
-          type: users
-          icon: users
-          listable: hidden
-          validate:
-            - required
-      -
         handle: bard
         field:
           always_show_set_button: false
@@ -54,17 +43,16 @@ sections:
           icon: bard
           listable: hidden
       -
-        handle: featured_image
+        handle: author
         field:
-          mode: grid
-          container: assets
-          restrict: false
-          allow_uploads: true
-          max_files: 1
-          display: 'Featured Image'
-          type: assets
-          icon: assets
+          max_items: 1
+          mode: select
+          display: Author
+          type: users
+          icon: users
           listable: hidden
+          validate:
+            - required
   sidebar:
     display: Sidebar
     fields:
@@ -76,6 +64,18 @@ sections:
           localizable: true
           validate:
             - required
+      -
+        handle: featured_image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Featured Image'
+          type: assets
+          icon: assets
+          listable: hidden
       -
         handle: date
         field:
