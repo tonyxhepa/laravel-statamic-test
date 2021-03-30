@@ -4,6 +4,6 @@ avatar: avatar.png
 id: 358b1c9e-2f5d-422b-970c-fa4d640de7b7
 password_hash: $2y$10$g2DMzJ2D/Cx2Zsue6qa.FenBu6hRM8XQ0oGglfuiXF23Q13Ra.sOq
 preferences:
-  collections:
-    posts:
+  taxonomies:
+    tags:
       after_save: create_another
