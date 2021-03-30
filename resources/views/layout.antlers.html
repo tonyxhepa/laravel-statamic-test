@@ -18,10 +18,13 @@
                     </svg>
                     <span class="ml-3 text-xl">Laraveller</span>
                 </a>
+                <form action="/search">
+                    <input type="search" class="ml-4 p-2 text-gray-900 rounded" name="q" placeholder="Search"> 
+                </form>
                 <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    {{ nav:collection:pages include_home="true" }}
+                    {{ nav:main_nav }}
                     <a href="{{ url }}" class="mr-5 hover:text-gray-900">{{ title }}</a>
-                    {{ /nav:collection:pages }}
+                    {{ /nav:main_nav }}
                 </nav>
             </div>
         </header>

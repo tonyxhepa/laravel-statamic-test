@@ -1,0 +1,7 @@
+{{ search:results index="posts" }}
+{{ if no_results }}
+<h2>No results.</h2>
+{{ else }}
+  {{ partial:posts/card }}
+{{ /if }}
+{{ /search:results }}

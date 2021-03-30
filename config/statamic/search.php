@@ -35,6 +35,11 @@ return [
         //     'driver' => 'local',
         //     'searchables' => 'collection:blog',
         // ],
+        'posts' => [
+            'driver' => 'local',
+            'searchables' => 'collection:posts',
+            'fields' => ['title', 'bard'],
+        ]
 
     ],
 
